@@ -1,0 +1,59 @@
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 200px;
+}
+
+textarea {
+  width: 85vw;
+  height: 200px;
+}
+@media (min-width: 32em) {
+  textarea {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 3px solid black;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+#story-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 85vw;
+  padding: 0;
+}
+
+#story-list li {
+  background-color: #ccc;
+  padding: 0.25rem;
+  border-radius: 3px;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.5rem;
+  border: 3px solid black;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

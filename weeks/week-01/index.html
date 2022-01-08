@@ -5,14 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week 1 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
   <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <h1>Week 1</h1>
   </header>
   <main>
-    <h2>LocalStorage Exercise</h2>
+    <h2>LocalStorage Exercise: Story Editor</h2>
+    <h3>Story List (Select to display below)</h3>
+    <ul id="story-list"></ul>
+    <div id="main-message"></div>
+    <label>
+      Story Name
+      <span id="name-message" class="error-message"></span>
+      <input type="text" id="story-name">
+    </label>
+    <label>
+      Story Content 
+      <span id="content-message" class="error-message"></span>
+      <textarea placeholder="Begin writing here..." id="story-content"></textarea>
+    </label>
+    <button type="button" id="save-button">Save Story!</button>
+    <section id="display-story"></section>
   </main>
   <footer>
     <p>

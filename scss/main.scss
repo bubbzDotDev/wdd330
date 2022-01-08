@@ -35,6 +35,14 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 0.9rem;
+
+  @include breakpoint('small') {
+    font-size: 1.2rem;
+  }
+}
+
 header,
 footer {
   background-color: $secondary-bg;
