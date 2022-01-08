@@ -9,7 +9,7 @@ const displayLinks = (items, list) => {
   });
 }
 
-// Fetch the data
+// Fetch the data and send to build function
 fetch('data/data.json')
 .then(response => response.json())
 .then(data => {

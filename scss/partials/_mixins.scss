@@ -1,0 +1,17 @@
+// Mixins
+
+// Screen size for breakpoints
+$break-small: 32em;
+
+// Breakpoints
+@mixin breakpoint($break) {
+  @if $break == 'small' {
+    @media (min-width: $break-small) {
+      @content;
+    }
+  } @else {
+    @media ($break) {
+      @content;
+    }
+  }
+}

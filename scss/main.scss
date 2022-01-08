@@ -1,0 +1,59 @@
+@use 'partials' as *;
+
+$element-padding: 0.5rem;
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: $text-on-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 1.2rem;
+
+  @include breakpoint('small') {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+
+  @include breakpoint('small') {
+    font-size: 1.5rem;
+  }
+}
+
+header,
+footer {
+  background-color: $secondary-bg;
+  color: $text-on-secondary;
+  padding: $element-padding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: $text-on-secondary;
+  }
+}
+
+main {
+  padding: $element-padding;
+
+  @include breakpoint('small') {
+    width: fit-content;
+    margin: 1rem auto;
+  }
+}

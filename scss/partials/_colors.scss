@@ -1,0 +1,12 @@
+// Colors
+
+// Define color names in palette
+$dark-blue: hsl(215.9, 76.4%, 41.6%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+// Apply colors to theme
+$primary-bg: $white;
+$text-on-primary: $black;
+$secondary-bg: $dark-blue;
+$text-on-secondary: $white;
