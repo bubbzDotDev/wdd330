@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Week 2</h1>
+  </header>
+  <main>
+    <h2>JS Hero Exercise #80: "To be continued ..." </h2>
+    <a href="https://www.jshero.net/en/koans/further.html" rel="noopener" target="_blank">Link to JS Hero exercise page</a>
+
+    <h3>Exercise Details:</h3>
+    <p>Write a function <strong>digitsum</strong> that calculates the digit sum of an integer. The digit sum of an integer is the sum of all its digits.</p>
+    <p>Example: <strong>digitsum(192)</strong> should return  <strong>12</strong>.</p>
+
+    <h3>Test Function:</h3>
+    <label>
+      Enter a number
+      <input type="number" id="number-input">
+    </label>
+    <button type="button" id="submit-button">Calculate!</button>
+    
+    <div id="display-result"></div>
+
+    <button type="button" id="display-button"><span id="show-hide-span">Display</span> Function</button>
+    
+    <div id="display-function" class="hide-me">
+      <code>
+        const digitsum = (num) => {<br>
+          &nbsp;&nbsp;const numString = `${num}`;<br>
+          &nbsp;&nbsp;const numLength = numString.length;<br>
+          &nbsp;&nbsp;const numArray = [];<br>
+          &nbsp;&nbsp;let result = 0;<br><br>
+        
+          &nbsp;&nbsp;for (let i = 0; i < numLength; i++) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;numArray.push(numString[i]);<br>
+            &nbsp;&nbsp;}<br><br>
+        
+          &nbsp;&nbsp;numArray.forEach(digit => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result += parseInt(digit);<br>
+            &nbsp;&nbsp;});<br><br>
+      
+          &nbsp;&nbsp;return result;<br>
+        }
+      </code>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="../../">Home</a> |
+      <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU-I Online Learning</a>
+    </p>
+  </footer>
+</body>
+</html>
