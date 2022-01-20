@@ -20,6 +20,8 @@ const mean = (inputString) => {
     sum += +numArray[i]; // Converts numArray[i] from a string to a number before adding it to sum.
     if (numArray[i].trim() === '') {
       return 'not able to be calculated because there are extra spaces';
+    } else if (!Number.isInteger(+numArray[i])) {
+      return 'not able to be calculated because something other than a number was entered';
     } else if (i === length - 1) {
       resultString += `${numArray[i]}`; // Last number so no plus sign added.
     } else {
