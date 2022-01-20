@@ -1,0 +1,52 @@
+label {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+input {
+  width: 50%;
+}
+
+input,
+button {
+  border: 2px solid black;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+#display-result,
+#display-button {
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+#display-function {
+  background-color: #ccc;
+  padding: 0.25rem;
+  border: 2px solid black;
+  margin-top: 0.25rem;
+  width: 95%;
+  max-width: 350px;
+  font-size: 0.8rem;
+}
+
+.hide-me {
+  display: none;
+}
