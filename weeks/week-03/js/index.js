@@ -19,7 +19,7 @@ const mean = (inputString) => {
   for (let i = 0; i < length; i++) { // Changed to 'for loop' instead of the 'forEach' used to solve it for more robust string result in the browser.
     sum += +numArray[i]; // Converts numArray[i] from a string to a number before adding it to sum.
     if (numArray[i].trim() === '') {
-      return 'not able to be calculated because there are extra spaces';
+      return 'not able to be calculated because there is at least one extra space';
     } else if (!Number.isInteger(+numArray[i])) {
       return 'not able to be calculated because something other than a number was entered';
     } else if (i === length - 1) {
