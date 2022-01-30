@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Week 4</h1>
+  </header>
+  <main>
+    <h2>JS Hero Exercise #74: "String: split()" </h2>
+    <a href="https://www.jshero.net/en/koans/stringsplit.html" rel="noopener" target="_blank">Link to JS Hero exercise page</a>
+
+    <h3>Exercise Details:</h3>
+    <p class="details">
+      Write a function <strong>add</strong> that takes a string with a summation task
+      and returns its result as a number. A finite number of natural numbers should be added.
+      The summation task is a string of the form '1+19+...+281'.
+    </p>
+    <p>Example: <strong>add('7+12+100')</strong> should return <strong>119</strong>.</p>
+
+    <h3>Test Function:</h3>
+    <label>
+      Enter more than one number, each separated by only a plus sign (+):
+      <input type="text" id="number-input">
+    </label>
+    <button type="button" id="submit-button">Calculate!</button>
+    
+    <div id="display-result"></div>
+
+    <button type="button" id="display-button"><span id="show-hide-span">Display</span> Function</button>
+    
+    <div id="display-function" class="hide-me">
+      <code>
+        const add = (strToAdd) => {<br>
+          &nbsp;&nbsp;const arrFromStr = strToAdd.split('+');<br>
+          &nbsp;&nbsp;let result = 0;<br>
+          &nbsp;&nbsp;arrFromStr.forEach(num => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result += +num;<br>
+          &nbsp;&nbsp;});<br>
+          &nbsp;&nbsp;return result;<br>
+        }
+      </code>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="../../">Home</a> |
+      <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU-I Online Learning</a>
+    </p>
+  </footer>
+</body>
+</html>
