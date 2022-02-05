@@ -3,6 +3,7 @@
 import utilities from './utilities.js';
 import ls from './ls.js';
 
+
 export default class Todo {
 
   constructor(id, content, completed=false) {
@@ -11,6 +12,8 @@ export default class Todo {
     this.completed = completed;
   }
 
-
+  save() {
+    
+  }
 
 };

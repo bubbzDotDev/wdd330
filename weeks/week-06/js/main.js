@@ -1,10 +1,10 @@
 'use strict';
 
+import utilities from './utilities.js';
 import Todos from './Todos.js';
 
-const todoItemsList = document.querySelector('#todo-items-list');
-const addTodoButton = document.querySelector('#add-todo-button');
-
+const todoItemsList = utilities.qs('#todo-items-list');
+const addTodoButton = utilities.qs('#add-todo-button');
 
 /* 
  *  To Do List 
@@ -21,5 +21,5 @@ if (localStorage.length > 0) {
  *  Add Item Button
  */
 addTodoButton.addEventListener('click', () => {
-  
+
 });

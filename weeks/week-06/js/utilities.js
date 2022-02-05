@@ -6,7 +6,7 @@
  * @return {element}     The matching element or null if not found
  */
 function qs(selector) {
-   
+   return document.querySelector(selector);
 }
 
  /**
@@ -14,7 +14,7 @@ function qs(selector) {
   * @param  {string} elementSelector The selector for the element to attach the listener to
   * @param {function} callback The callback function to run
   */
- function onTouch(elementSelector, callback) {
+function onTouch(elementSelector, callback) {
    
 }
 
