@@ -1,18 +1,13 @@
-label {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-}
-
-input {
-  width: 50%;
+h2,
+h3 {
+  text-align: center;
 }
 
 input,
 button {
   border: 2px solid black;
   margin-top: 0.25rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 button {
@@ -20,6 +15,7 @@ button {
   background-color: #fff;
   font-weight: bold;
   transition: 0.3s;
+  margin: 0.15rem;
 }
 
 button:hover {
@@ -27,30 +23,42 @@ button:hover {
   background-color: #000;
 }
 
-#display-result,
-#display-button {
-  margin-top: 1rem;
-}
-
 .error {
   color: red;
   font-weight: bold;
 }
 
-#display-function {
-  background-color: #ccc;
-  padding: 0.25rem;
-  border: 2px solid black;
-  margin-top: 0.25rem;
-  width: 95%;
-  max-width: 350px;
-  font-size: 0.8rem;
+section {
+  margin: 0 auto;
+  width: fit-content;
+  border: 5px #ccc dashed;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  min-height: 400px;
 }
 
-.hide-me {
-  display: none;
+.app-footer {
+  background-color: #fff;
 }
 
-.details {
-  max-width: 500px;
+.app {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 350px;
+}
+
+.app-input input {
+  width: 60%;
+}
+
+.app-input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
