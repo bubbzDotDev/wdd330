@@ -9,13 +9,14 @@ function qs(selector) {
    return document.querySelector(selector);
 }
 
- /**
-  * Add a touchend event listener to an element for mobile with a click event fallback for desktops
-  * @param  {string} elementSelector The selector for the element to attach the listener to
-  * @param {function} callback The callback function to run
-  */
-function onTouch(elementSelector, callback) {
-   
+function compare(a, b) { // From: https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+   if ( a.id < b.id ){
+      return -1;
+    }
+    if ( a.id > b.id ){
+      return 1;
+    }
+    return 0;
 }
 
-export default { qs, onTouch };
+export default { qs, compare };

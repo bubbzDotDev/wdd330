@@ -43,7 +43,7 @@ section {
 
 .app {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto auto;
   min-height: 350px;
 }
 
@@ -61,4 +61,14 @@ ul,
 li {
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
