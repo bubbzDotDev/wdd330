@@ -98,6 +98,7 @@ li button {
 .add-item-text {
   margin-bottom: 0.5rem;
   border: none;
+  justify-content: center;
 }
 
 #items-found {
