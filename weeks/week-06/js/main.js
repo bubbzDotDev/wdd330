@@ -26,7 +26,8 @@ if (localStorage.length > 0) {
 /* 
  *  Add Item Button
  */
-addTodoButton.addEventListener('click', () => {
+addTodoButton.addEventListener('click', event => {
+  event.preventDefault();
   const todoInput = utilities.qs('#todo-input').value;
   if (todoInput.trim() === '') {
     errorMessage.textContent = 'Please enter an item and try again.';
