@@ -16,6 +16,7 @@ button {
   font-weight: bold;
   transition: 0.3s;
   margin: 0.15rem;
+  color: #000;
 }
 
 button:hover,
