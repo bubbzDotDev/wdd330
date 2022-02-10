@@ -1,32 +1,26 @@
 'use strict';
 
 import utilities from './utilities.js';
-import ls from './ls.js';
 import Todo from './Todos.js';
 
 const todoItemsList = utilities.qs('#todo-items-list');
 const addTodoButton = utilities.qs('#add-todo-button');
 const errorMessage = utilities.qs('#error-message');
-
-function renderTodoList() {
-  const todos = ls.getArrayFromLS();
-  todos.forEach(todo => {
-    const li = document.createElement('li');
-    li.textContent = todo.content;
-    todoItemsList.appendChild(li);
-  });
-}
+const filterAllButton = utilities.qs('#filter-all-button');
+const filterActiveButton = utilities.qs('#filter-active-button');
+const filterCompletedButton = utilities.qs('#filter-completed-button');
 
 /* 
  *  To Do List 
  */
 if (localStorage.length > 0) {
   // Items exist
-  renderTodoList();
+  utilities.renderTodoList();
+  utilities.filterAll();
 
 } else {
   // No items yet
-  todoItemsList.textContent = 'Add an item below to get started!';
+  todoItemsList.innerHTML = '<li class="add-item-text">Add an item below to get started!</li>';
 }
 
 /* 
@@ -42,6 +36,25 @@ addTodoButton.addEventListener('click', () => {
     const todo = new Todo(timestamp, todoInput, false);
     todo.save();
     utilities.qs('#todo-input').value = '';
-    location.reload();
+    utilities.renderTodoList();
+    utilities.filterAll();
   }
+});
+
+/* 
+ *  Filtering
+ */
+filterAllButton.addEventListener('click', () => {
+  utilities.filterAll();
+  utilities.renderTodoList();
+});
+
+filterActiveButton.addEventListener('click', () => {
+  utilities.filterActive();
+  utilities.renderTodoList('active');
+});
+
+filterCompletedButton.addEventListener('click', () => {
+  utilities.filterCompleted();
+  utilities.renderTodoList('completed');
 });

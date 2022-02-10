@@ -1,8 +1,6 @@
 'use strict';
 
-import utilities from './utilities.js';
 import ls from './ls.js';
-
 
 export default class Todo {
 
@@ -15,5 +13,4 @@ export default class Todo {
   save() {
     ls.writeToLS(this.id, JSON.stringify(this));
   }
-
 };
