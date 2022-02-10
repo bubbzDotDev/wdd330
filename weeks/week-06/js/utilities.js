@@ -88,10 +88,10 @@ function renderTodoList(filter) {
    } else {
       filteredTodos = [...todos];
       filteredTodos.sort(compareCompleted);
-      if (filteredTodos.length < 1) {
+      const filterActiveFromAll = filteredTodos.filter(todo => todo.completed === false);
+      if (filterActiveFromAll.length < 1) {
          itemsFound.textContent = '';
       } else {
-         const filterActiveFromAll = filteredTodos.filter(todo => todo.completed === false);
          itemsFound.textContent = `${filterActiveFromAll.length} item${filterActiveFromAll.length > 1 ? 's' : ''} left!`;
       }
    }
