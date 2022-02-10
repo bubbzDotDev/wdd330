@@ -80,7 +80,7 @@ function renderTodoList(filter) {
    } else if (filter === 'completed') {
       filteredTodos = todos.filter(todo => todo.completed === true);
       if (filteredTodos.length < 1) {
-         todoItemsList.innerHTML = '<li class="add-item-text">No more completed items.</li>';
+         todoItemsList.innerHTML = '<li class="add-item-text">No completed items.</li>';
          itemsFound.textContent = '';
       } else {
          itemsFound.textContent = `${filteredTodos.length} item${filteredTodos.length > 1 ? 's' : ''} completed!`;
