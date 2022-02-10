@@ -51,10 +51,6 @@ section {
   min-height: 350px;
 }
 
-.app-input input {
-  width: 60%;
-}
-
 .app-input {
   display: flex;
   justify-content: space-evenly;
@@ -86,10 +82,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-li button {
-  color: red;
 }
 
 .strikethrough {

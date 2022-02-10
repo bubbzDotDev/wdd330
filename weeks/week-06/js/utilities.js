@@ -98,10 +98,10 @@ function renderTodoList(filter) {
    filteredTodos.forEach(todo => {
       const li = document.createElement('li');
       li.innerHTML = String.raw`
-         <div>
+         <label>
             <input type="checkbox" id="id-${todo.id}">
             <span id="content-${todo.id}">${todo.content}</span>
-         </div>
+         </label>
          <button type="button" id="remove-todo-button-${todo.id}">&#10006;</button>
       `;
       todoItemsList.appendChild(li);
