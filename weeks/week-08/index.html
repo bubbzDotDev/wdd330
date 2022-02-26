@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 8 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Week 8</h1>
+  </header>
+  <main>
+    <h2>JS Hero Exercise #58: "Array: slice()" </h2>
+    <a href="https://www.jshero.net/en/koans/slice.html" rel="noopener" target="_blank">Link to JS Hero exercise page</a>
+
+    <h3>Exercise Details:</h3>
+    <p class="details">
+      Write a function <strong>halve</strong> that copies the first half of an array. 
+      With an odd number of array elements, the middle element should belong to the first half.
+    </p>
+    <p class="details">
+      Example: <strong>halve([1, 2, 3, 4])</strong> should return <strong>[1, 2]</strong>.  
+    </p>
+
+    <h3>Test Function:</h3>
+    <label>
+      Enter more than one number, each separated by only a comma:
+      <input type="text" id="number-input">
+    </label>
+    <button type="button" id="submit-button">Calculate!</button>
+    
+    <div id="display-result"></div>
+
+    <button type="button" id="display-button"><span id="show-hide-span">Display</span> Function</button>
+    
+    <div id="display-function" class="hide-me">
+      <code>
+        const halve = (arr) => {<br>
+          &nbsp;&nbsp;const halfPoint = Math.ceil(arr.length / 2);<br>
+          &nbsp;&nbsp;return arr.slice(0, halfPoint);<br>
+        };
+      </code>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="../../">Home</a> |
+      <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU-I Online Learning</a>
+    </p>
+  </footer>
+</body>
+</html>
