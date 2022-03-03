@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Week 9</h1>
+  </header>
+  <main>
+    <h2>JS Hero Exercise #67: "while loop" </h2>
+    <a href="https://www.jshero.net/en/koans/while.html" rel="noopener" target="_blank">Link to JS Hero exercise page</a>
+
+    <h3>Exercise Details:</h3>
+    <p class="details">
+      Write a function <strong>spaces</strong> that takes a natural number n and returns a string of n spaces.
+    </p>
+    <p class="details">
+      Example: <strong>spaces(1)</strong> should return <strong>' '</strong>.
+    </p>
+
+    <h3>Test Function:</h3>
+    <label>
+      Enter a number:
+      <input type="number" id="number-input">
+    </label>
+    <button type="button" id="submit-button">Let's see some spaces!</button>
+    
+    <div id="display-result"></div>
+
+    <button type="button" id="display-button"><span id="show-hide-span">Display</span> Function</button>
+    
+    <div id="display-function" class="hide-me">
+      <code>
+        const spaces = n => {<br>
+          &nbsp;&nbsp;let result = '';<br>
+          &nbsp;&nbsp;while (result.length < n) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result += ' ';<br>
+          &nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;return result;<br>
+        };
+      </code>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="../../">Home</a> |
+      <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU-I Online Learning</a>
+    </p>
+  </footer>
+</body>
+</html>
