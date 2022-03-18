@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 10 | Chris Blount's WDD 330 Portfolio</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Week 10</h1>
+  </header>
+  <main>
+    <h2>JS Hero Exercise #54: "Sorting arrays" </h2>
+    <a href="https://www.jshero.net/en/koans/arraysort.html" rel="noopener" target="_blank">Link to JS Hero exercise page</a>
+
+    <h3>Exercise Details:</h3>
+    <p class="details">
+      Write a function <strong>sort</strong> that takes an array filled with 3 numbers and returns these 3 numbers sorted in ascending order as an array.
+    </p>
+    <p class="details">
+      Example: <strong>sort([2, 3, 1])</strong> should return <strong>[1, 2, 3]</strong>.
+    </p>
+
+    <h3>Test Function:</h3>
+    <label>
+      Enter at least three numbers out of order separated by commas:
+      <input type="text" id="number-input">
+    </label>
+    <button type="button" id="submit-button">Sort!</button>
+    
+    <div id="display-result"></div>
+
+    <button type="button" id="display-button"><span id="show-hide-span">Display</span> Function</button>
+    
+    <div id="display-function" class="hide-me">
+      <code>
+        const sort = arr => {<br>
+          &nbsp;&nbsp;return arr.sort();<br>
+        };
+      </code>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="../../">Home</a> |
+      <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU-I Online Learning</a>
+    </p>
+  </footer>
+</body>
+</html>
